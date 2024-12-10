@@ -25,7 +25,7 @@ jobs:
 
       - name: Print developer info
         run: |
-          echo "Full Name: ${env.FULL_NAME}, Group: ${env.GROUP_NUMBER}, GitHub Username: ${github.actor}"
+          echo "Full Name: $env.FULL_NAME, Group: $env.GROUP_NUMBER, GitHub Username: $github.actor"
 
       - name: Setup Python
         uses: actions/setup-python@v4
