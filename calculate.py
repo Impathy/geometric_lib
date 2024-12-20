@@ -4,7 +4,7 @@ import rectangle
 import triangle
 
 figs = ['circle', 'square', 'rectangle', 'triangle']
-funcs = ['perimeter', 'area']
+funcs = ['squareArea', 'squarePerimeter', 'circleArea', 'circlePerimeter', 'rectangleArea', 'rectanglePerimeter', 'triangleArea', 'trianglePerimeter']
 sizes = {}
 
 def calc(fig, func, size):
