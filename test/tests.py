@@ -11,8 +11,8 @@ class TestGeometryFunctions(unittest.TestCase):
     '''Позитивные тесты'''
 
     def test_calc_arguments_positive(self):
-        self.assertAlmostEqual(calc('circle', 'area', [1]), math.pi)
-        self.assertAlmostEqual(calc('circle', 'area', [2]), 4 * math.pi)
+        self.assertAlmostEqual(calc('circle', 'circleArea', [1]), math.pi)
+        self.assertAlmostEqual(calc('circle', 'circleArea', [2]), 4 * math.pi)
 
     def test_circle_area_positive(self):
         self.assertAlmostEqual(circleArea(1), math.pi)
