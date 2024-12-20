@@ -1,17 +1,21 @@
 import circle
 import square
+import rectangle
+import triangle
 
-
-figs = ['circle', 'square']
+figs = ['circle', 'square', 'rectangle', 'triangle']
 funcs = ['perimeter', 'area']
 sizes = {}
 
 def calc(fig, func, size):
-	assert fig in figs
-	assert func in funcs
+    if not(fig in figs):
+        raise not_a_fig
+    if not(func in funcs):
+        raise not_a_func
+    if not(all([type(x) == int for x in size])):
+        raise not_an_int
 
-	result = eval(f'{fig}.{func}(*{size})')
-	print(f'{func} of {fig} is {result}')
+	return eval(f'{fig}.{func}(*{size})')
 
 if __name__ == "__main__":
 	func = ''

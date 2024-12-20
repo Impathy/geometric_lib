@@ -4,10 +4,15 @@ from circle import *
 from rectangle import *
 from square import *
 from triangle import *
+from calculate import *
 
 class TestGeometryFunctions(unittest.TestCase):
 
     '''Позитивные тесты'''
+
+    def test_calc_arguments_positive(self):
+        self.assertAlmostEqual(calc('circle', 'area', [1]), math.pi)
+        self.assertAlmostEqual(calc('circle', 'area', [2]), 4 * math.pi)
 
     def test_circle_area_positive(self):
         self.assertAlmostEqual(circleArea(1), math.pi)
@@ -42,6 +47,9 @@ class TestGeometryFunctions(unittest.TestCase):
         self.assertEqual(trainglePerimeter(7, 8, 9), 24)
 
     '''Негативные тесты'''
+    def test_calc_arg_negative(self):
+        with self.assertRaises(not_a_fig):
+            calc('brbr', 'area', [1])
 
     def test_circle_area_negative(self):
         with self.assertRaises(ValueError):
