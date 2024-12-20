@@ -8,13 +8,12 @@ funcs = ['perimeter', 'area']
 sizes = {}
 
 def calc(fig, func, size):
-    if not(fig in figs):
-        raise not_a_fig
-    if not(func in funcs):
-        raise not_a_func
-    if not(all([type(x) == int for x in size])):
-        raise not_an_int
-
+	if not(fig in figs):
+		raise not_a_fig
+	if not(func in funcs):
+		raise not_a_func
+	if not(all([type(x) == int for x in size])):
+		raise not_an_int
 	return eval(f'{fig}.{func}(*{size})')
 
 if __name__ == "__main__":
