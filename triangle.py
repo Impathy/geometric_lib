@@ -6,6 +6,7 @@ def traingleArea(a, h):
         raise ValueError("Сторона и высота не могут быть отрицательными.")
     return a * h / 2
 
+
 def trainglePerimeter(a, b, c):
     '''Принимает 3 значения, a, b и c. a - первая сторона треугольника, b - вторая сторона треугольника, c - третья сторона треугольника. Возвращает периметр треугольника.'''
     if not isinstance(a, (int, float)) or not isinstance(b, (int, float)) or not isinstance(c, (int, float)):

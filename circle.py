@@ -1,5 +1,6 @@
 import math
 
+
 def circleArea(r):
     '''Принимает 1 значение r. r - радиус окружности. Возвращает площадь окружности.'''
     if not isinstance(r, (int, float)):
@@ -7,6 +8,7 @@ def circleArea(r):
     if r < 0:
         raise ValueError("Радиус не может быть отрицательным.")
     return math.pi * r * r
+
 
 def circlePerimeter(r):
     '''Принимает 1 значение r. r - радиус окружности. Возвращает периметр окружности.'''
