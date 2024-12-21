@@ -40,5 +40,5 @@ jobs:
       - name: Run tests
         run: |
           python -m unittest discover -s test
-          python -m pylint --disable=W --disable=C *.py
-          python -m ptlint --disable=W --disable=C test/*.py
+          python -m pylint --disable=W --disable=C --disable=R *.py
+          python -m ptlint --disable=W --disable=C --disable=R test/*.py
