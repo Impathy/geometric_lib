@@ -6,6 +6,7 @@ def squareArea(a):
         raise ValueError("Сторона не может быть отрицательной.")
     return a * a
 
+
 def squarePerimeter(a):
     '''Принимает 1 значение а. а - сторона квадрата. Возвращает периметр квадрата.'''
     if not isinstance(a, (int, float)):
