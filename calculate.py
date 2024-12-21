@@ -10,19 +10,6 @@ sizes = {}
 
 
 def calc(fig, func, size):
-
-
-<< << << < HEAD
-   if not (fig in figs):
-        raise not_a_fig
-    if not (func in funcs):
-        raise not_a_func
-    if not (all([type(x) == int for x in size])):
-        raise not_an_int
-
-        return eval(f'{fig}.{func}(*{size})')
-
-== =====
    if not(fig in figs):
         raise ValueError
     if not (func in funcs):
@@ -30,7 +17,7 @@ def calc(fig, func, size):
     if not (all([type(x) == int for x in size])):
         raise ValueError
     return eval(f'{fig}.{func}(*{size})')
->>>>>> > e909d1f3642b7e19bedc42439c764c07689ee57e
+
 
 if __name__ == "__main__":
     func = ''
