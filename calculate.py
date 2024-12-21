@@ -10,7 +10,7 @@ sizes = {}
 
 
 def calc(fig, func, size):
-   if not(fig in figs):
+    if not (fig in figs):
         raise ValueError
     if not (func in funcs):
         raise ValueError
